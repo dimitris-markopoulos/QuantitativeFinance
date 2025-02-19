@@ -1,6 +1,9 @@
-# Option Pricing Simulations Repository
-This repository contains ongoing simulations and models to value derivatives, including vanilla and exotic options. It serves as a collection for all pricing models related to financial derivatives, and will continue to be updated with new simulations as they are developed.
+### About the Project
 
-🚧 Work in Progress 🚧
+This repository contains various projects related to **quantitative finance**, including financial modeling, risk analysis, and optimization strategies. So far, it includes:
 
-This repository is a work in progress, and new models, methods, and refinements will be added over time. The code may not be fully optimized or contain all features yet. Contributions and suggestions are welcome as the project evolves.
+- **Option Pricing**: Implementations of Monte Carlo simulations for option pricing under both the Black-Scholes-Merton (BSM) and Heston models.
+- **Implied Volatility & Volatility Smile**: Calculations of implied volatility and volatility smile to analyze market behavior.
+- **Betting Strategies**: Simulations based on the Kelly Criterion for optimal betting and investment strategies.
+
+The project is constantly evolving, and new techniques and models will be added over time. The goal is to create a resource for those interested in quantitative finance and to share code for financial simulations and analyses.
