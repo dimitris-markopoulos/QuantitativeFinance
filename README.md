@@ -1,4 +1,4 @@
-### About the Project
+### About the Repository
 
 This repository contains various projects related to **quantitative finance**, including financial modeling, risk analysis, and optimization strategies. So far, it includes:
 
