@@ -2,7 +2,7 @@
 
 This repository contains various projects related to **quantitative finance**, including financial modeling, risk analysis, and optimization strategies. So far, it includes:
 
-- **Option Pricing**: Implementations of Monte Carlo simulations for option pricing under both the Black-Scholes-Merton (BSM) and Heston models.
+- **Option Pricing**: Implementations of Monte Carlo simulations for option pricing under both the Black-Scholes-Merton (BSM) and Heston models as well as exotics.
 - **Implied Volatility & Volatility Smile**: Calculations of implied volatility and volatility smile to analyze market behavior.
 - **Betting Strategies**: Simulations based on the Kelly Criterion for optimal betting and investment strategies.
 
