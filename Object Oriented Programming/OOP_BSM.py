@@ -2,6 +2,7 @@ import numpy as np
 import scipy.stats as stats
 
 class BSM:
+    model_name = "Black-Scholes-Merton"
     def __init__(self, S0, K, r, q, T, v):
         self.S0 = S0
         self.K = K
