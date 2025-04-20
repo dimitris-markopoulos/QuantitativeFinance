@@ -1,0 +1,11 @@
+numpy
+pandas
+yfinance
+matplotlib
+scikit-learn
+scipy
+ta
+os
+mlxtend
+xgboost
+lightgbm

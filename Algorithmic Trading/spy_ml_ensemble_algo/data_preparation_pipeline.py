@@ -92,51 +92,6 @@ class FinancialMLPipeline:
         X = subset.drop(columns=['Date', 'Target', 'set'])
         y = subset['Target']
         return X, y
-    
-    def run(self, start_date=None, end_date=None,
-            rsi_window=14, stoch_window=14,
-            sma_windows=(20, 50), ema_windows=(20,),
-            bb_window=20, std_window=20, atr_window=14,
-            buy_threshold=0.005, sell_threshold=0.005,
-            test_start='2025-03-20',
-            plot_split=True):
-        
-        df = self.get_price_data(start_date=start_date, end_date=end_date)
-
-        df = self.features_engineer(
-            df,
-            rsi_window=rsi_window,
-            stoch_window=stoch_window,
-            sma_windows=sma_windows,
-            ema_windows=ema_windows,
-            bb_window=bb_window,
-            std_window=std_window,
-            atr_window=atr_window
-        )
-
-        df = df.dropna().reset_index(drop=True)
-        df = self.create_trading_target(df, buy_threshold=buy_threshold, sell_threshold=sell_threshold)
-        df = self.tag_time_splits(df, test_start=test_start)
-
-        if plot_split:
-            os.makedirs('media', exist_ok=True)
-            plt.figure(figsize=(10, 2))
-            plt.plot(df['Date'], [1]*len(df), '|', color='gray', alpha=0.5)
-
-            for label, color in zip(['train', 'test'], ['green', 'red']):
-                subset = df[df['set'] == label]
-                plt.plot(subset['Date'], [1]*len(subset), '|', label=label, color=color, markersize=12)
-
-            plt.legend(loc='upper left', ncol=2)
-            plt.title('Train/Test Time Split')
-            plt.yticks([])
-            plt.xlabel('Date')
-            plt.tight_layout()
-            plt.savefig('media/tr_ts_distribution')
-            plt.show()
-
-        return df
-
 
     def run(self, start_date=None, end_date=None,
             rsi_window=14, stoch_window=14,
