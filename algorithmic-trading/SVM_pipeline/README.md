@@ -45,7 +45,7 @@ params = {
     'end':'2025-04-22',
     'test_prop':0.05,
     'initial_capital':10000,
-    'plot_path':'media/model_vs_benchmark_PnL.png',
+    'plot_path':'model_vs_benchmark_PnL.png',
     'runtime':'fast'
 }
 
