@@ -219,7 +219,7 @@ class SVMTradingPipeline:
         
         return df
     
-    def plot_pnl(self, joint_df, figsize = (12, 5), save_path='media/model_vs_benchmark_PnL.png'):
+    def plot_pnl(self, joint_df, figsize = (12, 5), save_path='model_vs_benchmark_PnL.png'):
         joint_df['Date'] = pd.to_datetime(joint_df['Date'])
         plt.figure(figsize=figsize)
         plt.plot(joint_df['Date'], joint_df['PnL'], label='Model', color='black')
