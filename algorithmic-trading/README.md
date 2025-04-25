@@ -7,7 +7,7 @@ Each folder is a self-contained strategy with modular code and full backtesting 
 ## Pipelines
 
 - `SVM_pipeline/` – SVM classifier with macro features and time-series CV  
-- `x4_pipeline/` – 4-model ensemble (LR, RF, XGBoost, LGBM) with voting signals; fixed parameters used to avoid overfitting from excessive tuning
+- `x4_pipeline/` – 4-model ensemble (LR, RF, XGBoost, LGBM); fixed parameters used to avoid overfitting from excessive tuning
 
 ## Usage
 
