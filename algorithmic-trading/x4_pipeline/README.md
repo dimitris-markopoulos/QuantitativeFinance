@@ -40,4 +40,4 @@ model.run()
 
 ## Example Output
 
-![PnL Plot](media/cumulative_pnl.png)
+![PnL Plot](cumulative_pnl.png)
