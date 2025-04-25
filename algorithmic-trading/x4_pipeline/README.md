@@ -36,3 +36,8 @@ model.run()
 # Hyperparameters - ensemble_weights=None,buy_threshold=0.005,sell_threshold=0.001,test_start='2025-01-20',xgb_max_depth=3,xgb_learn_rate=0.04,light_max_depth=3,light_learn_rate=0.03
 # if ensemble_weights is None:
 #   ensemble_weights = {'lr': 0.25, 'rf': 0.25, 'xgb': 0.25, 'lgb': 0.25}
+```
+
+## Example Output
+
+![PnL Plot](media/cumulative_pnl.png)
