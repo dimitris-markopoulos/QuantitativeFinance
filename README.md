@@ -7,3 +7,5 @@ This repository contains various projects related to **quantitative finance**, i
 - **Betting Strategies**: Simulations based on the Kelly Criterion for optimal betting and investment strategies.
 
 The project is constantly evolving, and new techniques and models will be added over time. The goal is to create a resource for those interested in quantitative finance and to share code for financial simulations and analyses.
+
+![Monte Carlo Simulation](z-archive/Media/gbm_simulation.gif)
